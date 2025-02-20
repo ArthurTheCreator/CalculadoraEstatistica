@@ -43,17 +43,17 @@ namespace MediaModaMediana.Controllers
             return Ok(0);
         }
 
-        [HttpPost("Moda")]
-        public ActionResult<float> Moda(List<float> listNumbers)
-        {
-            var modal = 0;
-            var moda = listNumbers.Count != 0 ?
-                (from i in listNumbers
-                 where listNumbers.MaxBy(i, ) > modal
-                 let setModal = modal = i
-                 select true).ToList() : null;
+        //[HttpPost("Moda")]
+        //public ActionResult<float> Moda(List<float> listNumbers)
+        //{
+        //    var modal = 0;
+        //    var moda = listNumbers.Count != 0 ?
+        //        (from i in listNumbers
+        //         where listNumbers.MaxBy(i, ) > modal
+        //         let setModal = modal = i
+        //         select true).ToList() : null;
 
-            return Ok(modal);
-        }
+        //    return Ok(modal);
+        //}
     }
 }
