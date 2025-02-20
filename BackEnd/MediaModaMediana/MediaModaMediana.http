@@ -1,0 +1,6 @@
+@MediaModaMediana_HostAddress = http://localhost:5089
+
+GET {{MediaModaMediana_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
